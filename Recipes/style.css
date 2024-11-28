@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background :url(pimk.jpg);
+    background-size: 100%;
+    overflow-x: hidden;
+}
+nav{
+    height: 18vh;
+    width: 100vw;
+    /* border: 2px dotted rgb(223, 250, 193); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    color: rgb(250, 250, 250);
+    background :#5d068c89;
+    
+    
+}
+#cook{
+    height: 18vh;
+    border-radius: 50%;
+    filter: brightness(0.8);
+    transition: all 0.2s;
+}
+#cook:hover{
+    filter: brightness(1);
+    /* scale : 1.2 */
+    /* border-radius: 0px; */
+}
+#logo{
+    font-size: 40px;
+    font-family: cursive;
+    font-weight: 20px;
+    font-style: italic;
+    letter-spacing: 1px;
+    padding-left: 40px;
+    
+}
+[type="text"]{
+    height: 34px;
+    border: none;
+    outline: none;
+    width: 220px;
+    border-radius: 4px;
+}
+
+[type="submit"]{
+    height: 34px;
+    border: none;
+    outline: none;
+    width: 80px;
+    color: aliceblue;
+    border-radius: 4px;
+    background-color: #a1cbe9;
+    margin-left: 5px;
+    margin-right: 20px;
+}
+#container{
+    /* background-color: black; */
+    height: 100vh;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: pink; */
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    padding:30px;
+}
+#recipe_item{
+    height: 300px;
+    width: 270px;
+    border-radius:20px;
+    padding: 20px;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap:wrap;
+    /* filter: grayscale(30%); */
+    /* filter: blur(2px); */
+    transition: scale 0.3s;
+    
+    
+}
+#recipe_item:hover{
+    scale : 1.1;
+    /* filter: blur(0px); */
+    /* filter: drop-shadow(40px 40px 40px 40px blue); */
+}
+#food_img{
+    height: 80%;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;    
+    }
+
+
+#recipe_name{
+   font-size: 25px;
+   font-style: italic;
+   text-align: center;
+   padding: 10px;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   color: black;
+   background-color: white;
+   width: 100%;
+
+}
+#view_recipe{
+   height: 15%;
+   width: 100%;
+   border: none;
+   border-bottom-left-radius: 20px;
+   border-bottom-right-radius: 20px;
+   background-color: #ff9d93 ;
+   color: white;    
+   font-weight:300;
+   font-size: 20px;
+   font-family: 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+input{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    text-align: center;
+        color: brown;
+}
+#ing_ins{
+    height: 550vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right:0;
+    display: none;
+}
+#ing_ins_info{
+    height: 450px;
+    width: 550px;
+    background: url(lic.jpg);
+    /* background-size: 50%; */
+    border-radius: 7px;
+    position: fixed;
+    top:80px;
+    /* border: 2px solid black; */
+    left: 350px;
+}
+#ing_info{
+    
+    height: 50%;
+    width:100%;
+    overflow: auto;
+}
+#ing_info h1{
+    color: rgb(125, 8, 8);
+    padding-top: 10px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-stretch: expanded;
+    display: flex;
+    justify-content: center;
+    text-decoration:dotted;
+    text-decoration-line: underline;
+}
+#ins_info{
+
+    height: 50%;
+    width:100%;
+    overflow: auto;
+
+}
+#ins_info h1{
+    color: rgb(125, 8, 8);
+    padding-top:3px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-stretch: expanded;
+    display: flex;
+    justify-content: center;
+    text-decoration:dotted;
+    text-decoration-line: underline;
+}
+p{
+    padding-top: 5px;
+    padding-bottom: 13px;
+    padding-left:15px ;
+    padding-right:15px ;
+    letter-spacing: 0.5px;
+    word-spacing: 2px;
+}
+#close{
+    position: absolute; 
+    right: 13px;
+    top: 13px;
+    border-radius: 2px;
+    padding: 1px;
+    background-color: rgb(248, 249, 245);
+   
+}
